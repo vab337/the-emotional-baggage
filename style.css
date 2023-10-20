@@ -1,0 +1,277 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/full-bg.png);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+}
+
+@font-face {
+  font-family: Garamondt;
+  src: url(assets/Garamondt-Regular.otf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(assets/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(assets/HelveticaNeueBold.ttf);
+  font-weight: bold;
+}
+
+
+
+
+.bodytext {
+  font-family: Helvetica;
+  font-weight: bold;
+  color:white;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+}
+
+button {
+  padding:5px;
+  background-color: black;
+  color:white;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 0.5em;
+  
+}
+
+#container {
+  position: relative;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 2vw;
+
+}
+
+#container > img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+
+#textcontainer {
+  position: absolute;
+  width: 60%;
+  height:100%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#step1 {
+  position: relative;
+  height: 50%;
+  top: 45%; 
+}
+
+#title {
+  position: relative;
+  /* top: 45%;  */
+  font-family: Garamondt;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#enter {
+  position: relative;
+  margin: 0 auto;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#step2 {
+  position: relative;
+  height: 50%;
+  top: 40%; 
+}
+
+#step2 img {
+  display:block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#step2 button {
+  position: relative;
+  margin: 0 auto;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+
+
+
+#step3 {
+  position: relative;
+  height: 50%;
+  width:100%;
+  top: 35%; 
+}
+
+#step3 > * {
+  margin: 10px;
+}
+
+#question {
+
+}
+
+#randomQuestion {
+  position: relative;
+  margin: 0 auto;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textInput {
+  color: white;
+  background: black; 
+  text-align: center;
+  width: 90%;
+  height: 40%;
+  margin-top: 30px;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#textInput:focus {
+  outline: none;
+}
+
+#submit {
+  position: relative;
+  margin: 0 auto;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.notDisplay {
+  display:none;
+}
+
+.displayItem {
+  display: block;
+}
+
+#submitAlert {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.414);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#alertBox {
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  width: 30%;
+  /* height: 20%; */
+  padding: 6%;
+  background: red;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 0.5em;
+}
+
+#goPrint {
+  position: absolute;
+  z-index:99;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+
+
+@media (max-width:480px)  { 
+  #container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  #title {
+    position: relative;
+    font-family: Garamondt;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  #enter {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+#step2 {
+  top: 35%; 
+}
+
+#step3 {
+  top: 30%; 
+}
+
+#step3 > * {
+  margin: 5px;
+
+}
+
+#textInput {
+  margin-top: 0px;
+}
+
+#alertBox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+  
+}
+
+
+@media (max-width:320px)  { 
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  }
